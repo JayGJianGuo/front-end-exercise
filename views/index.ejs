@@ -2,10 +2,42 @@
 <html>
   <head>
     <title><%= title %></title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+
+    <div class="container">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="jumbotron">
+          <h1>Front-End Exercise</h1>
+          <p>这是我的前端练习本。</p>
+          <p><a href="/posts" class="btn btn-primary btn-lg" role="button">
+            大航海时代
+          </a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="jumbotron">
+          <h1>Waterfall Exercise</h1>
+          <p>用不同方式实现瀑布流</p>
+          <ul class="list-group">
+            <li>
+              <a class="btn btn-default btn-lg" href="/waterfall_1" role="button">Waterfall with JS</a>
+            </li>
+            <li>
+              <a class="btn btn-warning btn-lg" href="/waterfall_2" role="button">Waterfall with JQuery</a>
+            </li>
+            <li>
+              <a class="btn btn-primary btn-lg" href="/waterfall_3" role="button">Waterfall with CSS</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
   </body>
 </html>

@@ -28,4 +28,23 @@ router.get('/posts/show', function(req, res, next){
     });
 });
 
+/* GET waterfall page. */
+router.get('/waterfall_1', function (req, res, next) {
+    res.render('waterfall_1', {
+        title: '瀑布流布局-JS'
+    });
+});
+
+router.get('/waterfall_2', function (req, res, next) {
+    res.render('waterfall_2', {
+        title: '瀑布流布局-JQuery'
+    });
+});
+
+router.get('/waterfall_3', function (req, res, next) {
+    res.render('waterfall_3', {
+        title: '瀑布流布局-CSS'
+    })
+});
+
 module.exports = router;
