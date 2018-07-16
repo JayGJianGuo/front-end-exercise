@@ -11,4 +11,11 @@ router.get('/posts', function(req, res, next){
     res.json({ postsList: ['Post1', 'Post2', 'Post3']});
 });
 
+/* POST posts */
+router.post('/posts/create', function(req, res, next){
+    var title = req.body.title;
+    var content = req.body.content;
+    res.send({ title, content });
+});
+
 module.exports = router;
