@@ -28,6 +28,13 @@ router.get('/posts/show', function(req, res, next){
     });
 });
 
+/* GET posts edit page */
+router.get('/posts/edit', function(req, res, next) {
+    var id = req.query.id;
+
+    res.render('edit', { id });
+});
+
 /* GET waterfall page. */
 router.get('/waterfall_1', function (req, res, next) {
     res.render('waterfall_1', {
