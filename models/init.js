@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:32773/front-end-exercise', {
+const db = mongoose.connect('mongodb://localhost:32776/front-end-exercise', {
     useMongoClient: true
 });
